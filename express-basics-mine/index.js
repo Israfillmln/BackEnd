@@ -33,7 +33,7 @@ const users = [
 ]
 
 app.get("/users", (req, res) => {
-  console.log(req.query.email);
+  console.log(req.query);
 
   if (users.length) {
     res.status(200).json({
